@@ -1,7 +1,7 @@
 #Composição
 
 class Atividade:
-    status="Deu certo"
+    status="Ativo"
     def __init__(self,nomeAti,prioridade,pessoa,projeto,dataIni,dataFim):
         self.nomeAti=nomeAti
         self.prioridade=prioridade
