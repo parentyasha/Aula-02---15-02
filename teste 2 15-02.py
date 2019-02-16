@@ -1,12 +1,11 @@
-#Composição
+#Muitos por Muitos
 
 class Atividade:
     status="Deu certo"
-    def __init__(self,nomeAti,prioridade,pessoa,projeto,dataIni,dataFim):
+    def __init__(self,nomeAti,prioridade,pessoa,dataIni,dataFim):
         self.nomeAti=nomeAti
         self.prioridade=prioridade
         self.pessoa=pessoa
-        self.projeto=projeto
         self.dataIni=dataIni
         self.dataFim=dataFim
 
@@ -50,18 +49,16 @@ print(pe.nomeP)
 print(pe.dataNasc)
 print("\n")
 
-a=Atividade("Ativade 1","1",pe,p,"17-02-2019","19-02-2019")
+a=Atividade("Ativade 1","1",pe,"17-02-2019","19-02-2019")
 print(a.nomeAti)
 print(a.prioridade)
 print(a.pessoa)
-print(a.projeto)
 print(a.dataIni)
 print(a.dataFim)
 print("\n")
 
 pa=ProjAti(p,a)
-print(pa.projeto)
-print(pa.atividade)
+print(pa.atividade.nomeAti)
 print("\n")
 
 print(a.status)
